@@ -25,7 +25,7 @@ def is_suspicious_phone(phone: str) -> bool:
     Check for suspicious phone number patterns:
     e.g., very repetitive or common fake patterns.
     """
-    if len(phone) < 4:
+    if len(phone) < 9 and len(phone) > 11: #only sellig india 
         return True  # too short to be real
     # Rule: if all digits are same, or starts/ends with certain sequences
     if phone.count(phone[0]) == len(phone):
@@ -50,3 +50,8 @@ def apply_rules(order: dict, seen_ips: set) -> dict:
     flags['repeated_ip'] = order.get('ip_address', "") in seen_ips
     # (We handle updating seen_ips outside this function, after processing the order.)
     return flags
+
+
+
+
+# truecaller api to track and know the name and spam marking
