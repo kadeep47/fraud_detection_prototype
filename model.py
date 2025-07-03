@@ -83,7 +83,7 @@ def generate_mock_data(n: int = 500) -> pd.DataFrame:
             "amount": amount
         })
     df = pd.DataFrame(data)
-    # Determine repeated_ip feature by checking duplicates in ip_address column
+    # Determine repeated_ip featurse by checking duplicates in ip_address column
     ip_counts = df['ip_address'].value_counts()
     df['repeated_ip'] = df['ip_address'].apply(lambda ip: 1 if ip_counts[ip] > 1 else 0)
 
