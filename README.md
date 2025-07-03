@@ -9,3 +9,6 @@ model.py – handles creation of mock data and training of the logistic regressi
  
  
 rules.py – defines the rule-checking functions (is_address_mismatch, is_suspicious_email, is_suspicious_phone) and an apply_rules helper that aggregates all rule flags for a given order. Having this separate makes it easy to adjust or add rules.
+
+
+Visit the app at  : https://parania-fraud-detection-dashboard.onrender.com/
