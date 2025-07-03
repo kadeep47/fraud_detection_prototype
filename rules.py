@@ -1,3 +1,5 @@
+
+
 # Define known disposable email domains for quick lookup
 DISPOSABLE_DOMAINS = {"tempmail.com", "fakeemail.com", "disposable.com"}
 
